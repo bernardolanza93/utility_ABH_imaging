@@ -23,7 +23,17 @@ def merge1()
     capture.release()
     cv2.destroyAllWindows()
                
-    
+
+
+
+def delete_csv_file(filenam_path):
+    # Delete the existing CSV file (if it exists)
+    if os.path.exists(filenam_path):
+        print("REMOVE:", filenam_path)
+        os.remove(filenam_path)
+    else:
+        print(filenam_path, " no such file in memory")
+
     
     
 def merge2()
